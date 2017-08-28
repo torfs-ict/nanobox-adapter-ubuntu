@@ -19,10 +19,11 @@ follow the procedure below __(as root)__ to set up the adapter.
 
 ```bash
 cd /srv/nanobox-endpoint
-sudo apt update
-sudo apt upgrade -y
-sudo apt install -y php7.0-cli php7.0-curl php7.0-zip php7.0-xml
-php composer.phar install
+add-apt-repository ppa:ondrej/php
+apt update
+apt upgrade -y
+apt install -y php7.1-cli php7.1-curl php7.1-zip php7.1-xml
+php composer.phar install -o --no-dev
 cp systemd.service /etc/systemd/system/nanobox-endpoint.service
 systemctl daemon-reload
 systemctl enable nanobox-endpoint
