@@ -6,5 +6,7 @@ parameters:
     nanobox.external_ip: '%env(NANOBOX_EXTERNAL_IP)%'
     nanobox.internal_ip: '%env(NANOBOX_INTERNAL_IP)%'
     endpoint.port: '%env(ENDPOINT_PORT)%'
+    endpoint.id: '%env(ENDPOINT_ID)%'
+    endpoint.name: '%env(ENDPOINT_NAME)%'
     endpoint.log_request: '%kernel.debug%'
     secret: '%nanobox.access_token%'

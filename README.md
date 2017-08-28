@@ -38,3 +38,5 @@ systemctl start nanobox-endpoint
 - `NANOBOX_EXTERNAL_IP`: The external IP address of the server.
 - `NANOBOX_INTERNAL_IP`: The internal IP address of the server.
 - `ENDPOINT_PORT`: The port on which the adapter should run e.g. 8000.
+- `ENDPOINT_ID`: The id used to identify this provider in the Nanobox dashboard.
+- `ENDPOINT_NAME`: The name used to identify this provider in the Nanobox dashboard.
