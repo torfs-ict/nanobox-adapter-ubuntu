@@ -1,0 +1,16 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    nanobox.access_token: 12345
+    nanobox.external_iface: eth0
+    nanobox.internal_iface: eth0:0
+    nanobox.external_ip: 0.0.0.0
+    nanobox.internal_ip: 0.0.0.0
+    nanobox.bootstrap_script: https://s3.amazonaws.com/tools.nanobox.io/bootstrap/ubuntu.sh
+    nanobox.ssh_user: root
+
+    endpoint.port: 8000
+    endpoint.log_request: false

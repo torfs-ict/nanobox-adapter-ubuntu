@@ -1,0 +1,10 @@
+# This file is auto-generated during the composer install
+parameters:
+    nanobox.access_token: '%env(NANOBOX_ACCESS_TOKEN)%'
+    nanobox.external_iface: '%env(NANOBOX_EXTERNAL_IFACE)%'
+    nanobox.internal_iface: '%env(NANOBOX_INTERNAL_IFACE)%'
+    nanobox.external_ip: '%env(NANOBOX_EXTERNAL_IP)%'
+    nanobox.internal_ip: '%env(NANOBOX_INTERNAL_IP)%'
+    endpoint.port: '%env(ENDPOINT_PORT)%'
+    endpoint.log_request: '%kernel.debug%'
+    secret: '%nanobox.access_token%'

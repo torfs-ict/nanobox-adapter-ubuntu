@@ -1,0 +1,20 @@
+{
+  "id":                "ubuntu",
+  "name":              "Ubuntu Server",
+  "server_nick_name":  "Ubuntu",
+  "default_region":    "local",
+  "default_size":      "standard",
+  "default_plan":      "standard",
+  "ssh_auth_method":   "key",
+  "ssh_key_method":    "object",
+  "bootstrap_script":  "https://s3.amazonaws.com/tools.nanobox.io/bootstrap/ubuntu.sh",
+  "external_iface":    "",
+  "internal_iface":    "",
+  "ssh_user":          "root",
+  "can_reboot":        true,
+  "can_rename":        false,
+  "credential_fields": [
+    { "key": "access-token", "label": "Access token" }
+  ],
+  "instructions": "TODO"
+}
