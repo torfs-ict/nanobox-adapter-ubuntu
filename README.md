@@ -21,7 +21,7 @@ follow the procedure below __(as root)__ to set up the adapter.
 cd /srv/nanobox-endpoint
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y php7.0-curl php7.0-zip php7.0-xml
+sudo apt install -y php7.0-cli php7.0-curl php7.0-zip php7.0-xml
 php composer.phar install
 cp systemd.service /etc/systemd/system/nanobox-endpoint.service
 systemctl daemon-reload
