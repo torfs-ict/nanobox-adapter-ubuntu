@@ -10,8 +10,10 @@ Nanobox services.
 
 ## Installation process
 
-Install a basic Ubuntu server, with only the SSH server package selected. After this, 
-follow the procedure below __(as root)__ to set up the adapter.
+Install a basic Ubuntu server, with only the SSH server package selected. Make sure to
+add a second (virtual NIC) which will be used by Nanobox for its private network. 
+
+After this, follow the procedure below __(as root)__ to set up the adapter.
 
 1. Clone the repository to `/srv/nanobox-endpoint`.
 2. Copy [.env.sample](.env.sample) to `.env` and adjust the configuration values.
@@ -36,7 +38,7 @@ systemctl start nanobox-endpoint
 - `NANOBOX_EXTERNAL_IFACE`: The network interface which provides external access to the server e.g. eth0.
 - `NANOBOX_INTERNAL_IFACE`: The network interface which has access to the internal network off the server e.g. eth1.
 - `NANOBOX_EXTERNAL_IP`: The external IP address of the server.
-- `NANOBOX_INTERNAL_IP`: The internal IP address of the server.
+- `NANOBOX_INTERNAL_IP`: The internal IP address of the server. Do not use 192.168.0.x as it will conflict with Nanobox.
 - `ENDPOINT_PORT`: The port on which the adapter should run e.g. 8000.
 - `ENDPOINT_ID`: The id used to identify this provider in the Nanobox dashboard.
 - `ENDPOINT_NAME`: The name used to identify this provider in the Nanobox dashboard.
